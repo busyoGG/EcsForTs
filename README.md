@@ -121,5 +121,5 @@ export default class RootSlowSystem extends RootSystem {
     }
 ```
 
-详细内容见 [TS实现ECS架构](https://busyo.buzz/article/Laya/%E5%B7%A5%E5%85%B7/TS%E5%AE%9E%E7%8E%B0ECS%E7%B3%BB%E7%BB%9F/)
+详细内容见 [TS实现ECS架构](https://busyo.buzz/article/Laya/%E5%B7%A5%E5%85%B7/TS%E5%AE%9E%E7%8E%B0ECS%E6%9E%B6%E6%9E%84/)
 参考项目见 [ECS](https://github.com/shangdibaozi/ECS/tree/master)
