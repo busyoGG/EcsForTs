@@ -7,6 +7,8 @@ ECS架构是 实体（Entity）-组件（Component）-系统（System） 组成�
 
 ## 使用方法
 
+* Tag示例
+
 ```typescript Tag示例
 import ECSManager from "../../../ECS/ECSManager";
 
@@ -16,6 +18,8 @@ export default class StatusTags {
     public static StatusB = 1;
 }
 ```
+
+* Comp示例
 
 ```typescript Comp示例
 import { Comp } from "../../../ECS/Comp";
@@ -32,6 +36,8 @@ export default class TransformComp extends Comp {
 }
 ```
 
+* Entity示例
+
 ```typescript Entity示例
 import Entity from "../../../ECS/Entity";
 import TransformComp from "../Comp/TransformComp";
@@ -40,6 +46,8 @@ export default class RoleEntity extends Entity {
     public Transform: TransformComp;
 }
 ```
+
+* ComblockSystem示例
 
 ```typescript ComblockSystem示例
 import { ComblockSystem } from "../../../ECS/ComBlockSystem";
@@ -71,6 +79,8 @@ export default class WorkSystem extends ComblockSystem<RoleEntity> implements IE
 }
 ```
 
+* RootSystem示例
+
 ```typescript RootSystem示例
 import Globals from "../../../Config/Globals";
 import { RootSystem } from "../../../ECS/RootSystem";
@@ -93,6 +103,8 @@ export default class RootSlowSystem extends RootSystem {
     }
 }
 ```
+
+* 根系统调用示例
 
 ```typescript 根系统调用示例
     onAwake(){
